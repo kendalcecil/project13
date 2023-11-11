@@ -1,0 +1,14 @@
+//*READ ME
+*//
+
+I worked on leetcode for this project. The first problem's description read: 
+"Write a function createHelloWorld. It should return a new function that always returns "Hello World"
+This is my solution code:
+var createHelloWorld = function() {
+    
+    return function(...args) {
+        return "Hello World"
+    }
+};
+
+Problem called for function returning to "Hello World," so I provided the return function tool with "Hello World" 
