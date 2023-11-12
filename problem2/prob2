@@ -1,0 +1,33 @@
+//Read me
+
+This is another LeetCode problem
+Here is this description:
+
+"Given an integer array arr and a filtering function fn, return a filtered array filteredArr.
+
+The fn function takes one or two arguments:
+
+arr[i] - number from the arr
+i - index of arr[i]
+filteredArr should only contain the elements from the arr for which the expression fn(arr[i], i) evaluates to a truthy value. A truthy value is a value where Boolean(value) returns true.
+
+Please solve it without the built-in Array.filter method."
+
+Here is my solution:
+ 
+
+var filter = function(arr, fn) {
+    const filteredArr = [];
+    for(let counter = 0; counter < arr.length; counter++)
+    {
+        if(fn(arr[counter], counter)){
+            filteredArr.push(arr[counter])
+        }
+    }
+    return filteredArr;
+};
+
+For this problem it called for filtering out an array. Part of the code was set up. The first line of the code is setting up the parameaters, the
+next line is stating where we are storing the array with specific values. The third line is a loop for going through the arry to be filtered. 
+The fourth line is an ifstatement, calling the function which returns a boolean value. The fith line is pushing our results back into 
+"const filteredArr=[]", and finally it is then returning the results of the filtered array.  
